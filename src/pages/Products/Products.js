@@ -28,7 +28,9 @@ const Products = ({navigation}) => {
       {loading ? (
         <Loading />
       ) : (
-        <FlatList data={data} renderItem={renderProduct} />
+        <>
+          <FlatList data={data} renderItem={renderProduct} />
+        </>
       )}
     </View>
   );
